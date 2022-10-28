@@ -11,7 +11,7 @@ __version__ = "0.0.1"
 #   Sort input source files if you glob sources to ensure bit-for-bit
 #   reproducible builds (https://github.com/pybind/python_example/pull/53)
 
-ext_modules = intree_extensions(sorted(glob("forward_models/*.cpp")))
+ext_modules = intree_extensions(sorted(glob("n_link_sim/*.cpp")))
 print(ext_modules)
 
 setup(
