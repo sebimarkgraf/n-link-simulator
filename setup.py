@@ -6,7 +6,11 @@ from pybind11 import get_cmake_dir
 from pybind11.setup_helpers import intree_extensions, build_ext
 from setuptools import setup, find_packages
 
-__version__ = "0.1.0"
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
+__version__ = "0.1.1"
 
 #   Sort input source files if you glob sources to ensure bit-for-bit
 #   reproducible builds (https://github.com/pybind/python_example/pull/53)
@@ -20,7 +24,7 @@ setup(
     author_email="sebastian-markgraf@t-online.de",
     url="https://github.com/sebimarkgraf/n_link_simulator",
     description="Simulators for double and quad link dynamics, taken from pypost toolbox",
-    long_description="",
+    long_description=long_description,
     ext_modules=ext_modules,
 
     extras_require={"test": "pytest"},
