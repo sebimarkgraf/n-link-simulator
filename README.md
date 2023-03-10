@@ -1,4 +1,6 @@
-# Simulators for double and quad link pendulum. 
+# Simulators for Double and Quadlink Pendulum
+
+Python Bindings for C++ Simulation of double and quadlink pendulum.
 
 ## Prerequisites
 Numpy

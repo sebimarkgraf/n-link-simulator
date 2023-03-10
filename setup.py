@@ -25,6 +25,7 @@ setup(
     url="https://github.com/sebimarkgraf/n_link_simulator",
     description="Simulators for double and quad link dynamics, taken from pypost toolbox",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     ext_modules=ext_modules,
 
     extras_require={"test": "pytest"},
