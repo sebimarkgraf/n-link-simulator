@@ -2,3 +2,4 @@ venv/
 .idea/
 *.so
 *.egg-info
+build/
